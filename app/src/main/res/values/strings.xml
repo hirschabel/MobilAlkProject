@@ -57,6 +57,15 @@
         <item>Húsáru</item>
     </string-array>
 
+    <string-array name="categories">
+        <item>Minden</item>
+        <item>Tejtermék</item>
+        <item>Gyümölcs</item>
+        <item>Zöldség</item>
+        <item>Húsáru</item>
+        <item>Pékáru</item>
+    </string-array>
+
     <array name="aru_item_pic">
         <item>@drawable/milk</item>
         <item>@drawable/apple</item>

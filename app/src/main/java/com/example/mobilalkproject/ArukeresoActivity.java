@@ -23,7 +23,11 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
 import android.widget.SearchView;
+import android.widget.Spinner;
 import android.widget.Toast;
 
 import com.google.android.gms.tasks.OnSuccessListener;
@@ -78,6 +82,11 @@ public class ArukeresoActivity extends AppCompatActivity {
 
         mFirestore = FirebaseFirestore.getInstance();
         mItems = mFirestore.collection("Items");
+        Spinner mSpinner = (Spinner) findViewById(R.id.spinner);
+
+        ArrayAdapter<String> myAdapter = new ArrayAdapter<String>(this, R.layout.spinner_item, getResources().getStringArray(R.array.categories));
+        mSpinner.setAdapter(myAdapter);
+
 
 
         queryData();
@@ -88,6 +97,21 @@ public class ArukeresoActivity extends AppCompatActivity {
         this.registerReceiver(powerReceiver, filter);
 
 
+        mSpinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
+                if (!mSpinner.getSelectedItem().toString().equals("Minden")) {
+                    mAdapter.getFilter().filter(mSpinner.getSelectedItem().toString());
+                } else {
+                    mAdapter.getFilter().filter("");
+                }
+            }
+
+            @Override
+            public void onNothingSelected(AdapterView<?> adapterView) {
+
+            }
+        });
     }
 
     BroadcastReceiver powerReceiver = new BroadcastReceiver() {
