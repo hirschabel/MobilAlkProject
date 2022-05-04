@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity">
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            tools:context=".RegisterActivity">
+            <EditText
+                android:id="@+id/editTextUserName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="@string/username"
+                android:inputType="text"
+                android:layout_marginTop="40dp"
+                android:layout_marginHorizontal="30dp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/register_text"
+                android:textSize="40dp"
+                android:textAlignment="center"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.15"
+                />
+
+
+            <EditText
+                android:id="@+id/editTextEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="@string/e_mail_address"
+                android:inputType="textEmailAddress"
+                android:layout_marginTop="30dp"
+                android:layout_marginHorizontal="30dp" />
+
+            <EditText
+                android:id="@+id/editTextPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="@string/password"
+                android:inputType="textPassword"
+                android:layout_marginTop="30dp"
+                android:layout_marginHorizontal="30dp" />
+
+            <EditText
+                android:id="@+id/editTextPassword2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="@string/confirm_password"
+                android:inputType="textPassword"
+                android:layout_marginTop="30dp"
+                android:layout_marginHorizontal="30dp" />
+
+            <Button
+                android:id="@+id/registerButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/register_button"
+                android:layout_marginTop="50dp"
+                android:layout_marginRight="100dp"
+                android:layout_marginLeft="100dp"
+                android:onClick="onRegister"/>
+
+            <Button
+                android:id="@+id/onCalcel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="onCancel"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="130dp"
+                android:layout_marginLeft="130dp"
+                android:text="@string/cancel"/>
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+package com.example.mobilalkproject;
+
+import androidx.appcompat.app.AppCompatActivity;
+
+import android.os.Bundle;
+import android.util.Log;
+import android.view.View;
+import android.widget.EditText;
+
+public class RegisterActivity extends AppCompatActivity {
+    private static final String LOG_TAG = com.example.mobilalkproject.RegisterActivity.class.getName();
+    //private static final String SECRET_KEY = com.example.mobilalkproject.RegisterActivity.class.getPackage().toString();
+
+    EditText editTextUserName;
+    EditText editTextEmail;
+    EditText editTextPassword;
+    EditText editTextPassword2;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_register);
+    }
+
+    public void onCancel(View view) {
+        finish();
+    }
+
+    public void onRegister(View view) {
+        String username = editTextUserName.getText().toString();
+        //String email = editTextEmail.getText().toString();
+        //String password = editTextPassword.getText().toString();
+        //String passwordConfirm = editTextPassword2.getText().toString();
+
+        Log.e(LOG_TAG, "Username: " + username);
+
+
+
+    }
+}

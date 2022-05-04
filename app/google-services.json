@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "280301368843",
+    "project_id": "mobilalkproject",
+    "storage_bucket": "mobilalkproject.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:280301368843:android:46ca2093baa7a6d7b5f90e",
+        "android_client_info": {
+          "package_name": "com.example.mobilalkproject"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "280301368843-g78s4i9dlva8u87rhhjlv97btqut636j.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.mobilalkproject",
+            "certificate_hash": "6ec8bcb94f0f50334eeabb8f4220f9f8507f4458"
+          }
+        },
+        {
+          "client_id": "280301368843-k1nobhf5knsse5ddlvva68trchnq44om.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDZHBsbl6EgxIn_Ee4glHVx-SVB3Z3Mbio"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "280301368843-k1nobhf5knsse5ddlvva68trchnq44om.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

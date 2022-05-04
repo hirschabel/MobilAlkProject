@@ -1,0 +1,74 @@
+<resources>
+    <string name="app_name">MobilAlkProject</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="login">login</string>
+    <string name="guest_login">guest login</string>
+    <string name="register">register</string>
+    <string name="login_text">Login</string>
+    <string name="register_text">Register</string>
+    <string name="confirm_password">Confirm password</string>
+    <string name="register_button">Register</string>
+    <string name="cancel">Cancel</string>
+    <string name="e_mail_address">E-mail address</string>
+    <string name="item_placeholder">Item name</string>
+    <string name="item_tags_placeholder">Tags</string>
+    <string name="item_description_placeholder">Description</string>
+
+    <string-array name="aru_item_names">
+        <item>Tej</item>
+        <item>Alma</item>
+        <item>Sajt</item>
+        <item>Kolbász</item>
+        <item>Kenyér</item>
+        <item>Retek</item>
+        <item>Körte</item>
+        <item>Banán</item>
+        <item>Joghurt</item>
+        <item>Kifli</item>
+        <item>Sonka</item>
+    </string-array>
+
+    <string-array name="aru_item_desc">
+        <item>Egy liter tej.</item>
+        <item>Egy darab alma.</item>
+        <item>13 db finom sajt szelet.</item>
+        <item>Minőségi magyar kolbász.</item>
+        <item>Frissen sült kenyér.</item>
+        <item>Finom retek.</item>
+        <item>Körte, egyenesen a termelőtől.</item>
+        <item>Egy kiló banán, átválogatott áru.</item>
+        <item>Egy doboz joghurt.</item>
+        <item>Frissen sült kifli.</item>
+        <item>Minőségi magyar sonka.</item>
+    </string-array>
+
+    <string-array name="aru_item_tag">
+        <item>Tejtermék</item>
+        <item>Gyümölcs</item>
+        <item>Tejtermék</item>
+        <item>Húsáru</item>
+        <item>Pékáru</item>
+        <item>Zöldség</item>
+        <item>Gyümölcs</item>
+        <item>Gyümölcs</item>
+        <item>Tejtermék</item>
+        <item>Pékáru</item>
+        <item>Húsáru</item>
+    </string-array>
+
+    <array name="aru_item_pic">
+        <item>@drawable/milk</item>
+        <item>@drawable/apple</item>
+        <item>@drawable/cheese</item>
+        <item>@drawable/sausage</item>
+        <item>@drawable/bread</item>
+        <item>@drawable/radish</item>
+        <item>@drawable/pear</item>
+        <item>@drawable/banana</item>
+        <item>@drawable/joghurt</item>
+        <item>@drawable/kifli</item>
+        <item>@drawable/ham</item>
+    </array>
+
+</resources>
