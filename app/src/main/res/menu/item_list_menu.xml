@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
     <item
         android:id="@+id/search_bar"
-        android:title="Search"
+        android:title="@string/search"
         android:icon="@drawable/ic_search"
         app:showAsAction="always"
         app:actionViewClass="android.widget.SearchView"
@@ -11,27 +11,27 @@
 
     <item
         android:id="@+id/sort_items"
-        android:title="Sort"
+        android:title="@string/sort"
         android:icon="@drawable/ic_text_sort_normal"
         app:showAsAction="ifRoom"
         app:actionViewClass="android.widget."
         />
     <item
         android:id="@+id/change_password_button"
-        android:title="Change password"
+        android:title="@string/change_password"
         app:showAsAction="never"
         app:actionViewClass="android.widget.SearchView"
         />
     <item
         android:id="@+id/delete_user_button"
-        android:title="Delete user"
+        android:title="@string/delete_user"
         app:showAsAction="never"
         app:actionViewClass="android.widget.SearchView"
         />
 
     <item
         android:id="@+id/log_out_button"
-        android:title="Log out"
+        android:title="@string/log_out"
         app:showAsAction="never"
         app:actionViewClass="android.widget.SearchView"
         />

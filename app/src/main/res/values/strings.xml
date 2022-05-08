@@ -1,19 +1,28 @@
 <resources>
     <string name="app_name">MobilAlkProject</string>
-    <string name="username">Username</string>
-    <string name="password">Password</string>
-    <string name="login">login</string>
-    <string name="guest_login">guest login</string>
-    <string name="register">register</string>
-    <string name="login_text">Login</string>
-    <string name="register_text">Register</string>
-    <string name="confirm_password">Confirm password</string>
-    <string name="register_button">Register</string>
-    <string name="cancel">Cancel</string>
-    <string name="e_mail_address">E-mail address</string>
+    <string name="username">Felhasználónév</string>
+    <string name="password">Jelszó</string>
+    <string name="login">Bejelentkezés</string>
+    <string name="guest_login">Belépés név nélkül</string>
+    <string name="register">Regisztráció</string>
+    <string name="login_text">Bejelentkezés</string>
+    <string name="register_text">Regisztráció</string>
+    <string name="confirm_password">Jelszó megerősítése</string>
+    <string name="register_button">Regisztráció</string>
+    <string name="e_mail_address">E-mail cím</string>
     <string name="item_placeholder">Item name</string>
     <string name="item_tags_placeholder">Tags</string>
     <string name="item_description_placeholder">Description</string>
+    <string name="change_password">Jelszó módosítása</string>
+    <string name="old_password">Régi jelszó</string>
+    <string name="new_password">Új jelszó</string>
+    <string name="new_password_again">Új jelszó megerősítése</string>
+    <string name="save">Mentés</string>
+    <string name="cancel">Mégse</string>
+    <string name="search">Keresés</string>
+    <string name="sort">Rendezés</string>
+    <string name="delete_user">Felhasználó törlése</string>
+    <string name="log_out">Kilépés</string>
 
     <string-array name="aru_item_names">
         <item>Tej</item>
