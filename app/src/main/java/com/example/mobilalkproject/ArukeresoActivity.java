@@ -244,7 +244,7 @@ public class ArukeresoActivity extends AppCompatActivity {
                 finish();
                 return true;
             case R.id.sort_items:
-                mHandler.send("hehe");
+                mHandler.send("Árukereső");
                 if (direction) {
                     queryDataDescend();
                     item.setIcon(R.drawable.ic_text_sort_reverse);
