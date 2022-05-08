@@ -1,8 +1,8 @@
 # MobilAlkProject
 
-Firebase autentikáció:
-  -Bejelentkezés: MainActivity.java (45. sor)
-  -Regisztráció: RegisterActivity.java (52. sor)
+- Firebase autentikáció:
+  - Bejelentkezés: MainActivity.java (45. sor)
+  - Regisztráció: RegisterActivity.java (52. sor)
 
 - Adatmodell:
   - AruItem
