@@ -29,3 +29,5 @@
 - 2 komplex Firestore lekérdezés:
   - orderBy(ASC) / Limit: ArukeresoActivity.java (143. sor)
   - orderBy(DESC) / Limit: ArukeresoActivity.java (163. sor)
+
+2021/22/2
